@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方塊模型 box model</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        img,div,span{
+            /* 內容大小 */
+            width: 200px;
+            /* height: 500px; */
+            background-color: lightblue;
+
+            /* 邊框 */
+            border: 10px solid black;
+
+            /* 內邊距 */
+            padding: 20px;
+            /* padding: 20px 50px 100px 200px; */
+            /* padding-top: 20px; */
+            /* padding-right: 50px;
+            padding-bottom: 100px;
+            padding-left: 200px; */
+
+            /* 外邊距 */
+            margin: 50px;
+        }
+
+        .border1{
+            height: 500px;
+            border: 2px solid salmon;
+
+            border-radius: 50px 200px 150px 300px;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 2px solid gray;
+            padding: 20px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        .borderbox{
+            box-sizing: border-box;
+        }
+
+        .box3{
+            background-color: lightblue;
+            border: 5px solid black;
+            margin: 50px auto;
+        }
+
+        .imgBox{
+            font-size: 0;
+        }
+        .imgBox *{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <section class="imgBox">
+    <img src="./images/pikachu.jpg" alt="">
+    <img src="./images/pikachu.jpg" alt="" class="borderbox">
+    <img src="./images/pikachu.jpg" alt="">
+    <img src="./images/pikachu.jpg" alt="">
+    </section>
+    <!-- <hr>
+
+    <div class="border1">文字</div>
+
+    <div class="circle"></div> -->
+
+    <div style="margin-bottom: 100px;">區塊元素</div>
+    <div style="margin-top: 70px;">區塊元素</div>
+    <div>區塊元素</div>
+    <div>區塊元素</div>
+
+    <br>
+    
+    <span>行內元素</span>
+    <span>行內元素</span>
+    <span>行內元素</span>
+    <span>行內元素</span>
+</body>
+</html>

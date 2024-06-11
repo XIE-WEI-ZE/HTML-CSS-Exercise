@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS選擇器 css selector & 內部樣式表</title>
+    <!-- 內部樣式表 -->
+    <style>
+      /* 
+        選擇器 {
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+
+      /* 標籤選擇器 */
+      h1,
+      h2 {
+        color: red;
+      }
+      /* h2 {
+        color: red;
+      } */
+      /* p {
+        color: green;
+      } */
+
+      /* Class選擇器 */
+      /* .item1{
+        color: blue;
+        font-size: 40px;
+      } */
+      .item2 {
+        color: green;
+      }
+
+      /* 指定用法 (標籤選擇器 + class選擇器) */
+      p.item1 {
+        color: blue;
+        font-size: 40px;
+      }
+
+      /* 套用多種選擇器 */
+      .red{
+        color: red;
+      }
+      .fz70{
+        font-size: 70px;
+      }
+      .fw900{
+        font-weight: 900;
+      }
+
+      /* ID選擇器 */
+      #theH1,#theH2{
+        color: red;
+        font-size: 36px;
+      }
+
+      /* 全域選擇器 */
+      * {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>文字</h1>
+    <p class="item1">文字</p>
+    <p class="item2">文字</p>
+    <h2>文字</h2>
+    <h3 class="item1">h3文字</h3>
+    <p>文字</p>
+    <p class="item1">文字</p>
+    <p>文字</p>
+    <p class="fw900 red fz70">指定文字</p>
+    <p>文字</p>
+    <p>文字</p>
+    <p class="item1">文字</p>
+    <p>文字</p>
+    <p class="item1">文字</p>
+    <p id="theH1">ID 選擇器</p>
+    <p id="theH1">ID 選擇器</p>
+
+    <script>
+      const theH1 = document.getElementById('theH1')
+      theH1.style.color = 'blue';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中時新聞網</title>
+    <style>
+        /* 設定全局樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p, span, h3 {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        hr {
+            font-size: 20px;
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
+        .reporter-info {
+            font-size: 14px;
+            color: #555;
+            text-align: left;
+        }
+        .highlight {
+            background-color: red;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        .more-reports ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .more-reports li {
+            margin: 10px 0;
+        }
+        .more-reports a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .more-reports a:hover {
+            text-decoration: underline;
+        }
+        .more-reports li:hover {
+            background-color: #f0f0f0;
+        }
+        ul.nav {
+            background-color: rgb(212, 206, 206);
+            padding: 5px;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            justify-content: flex-start; /* 左對齊 */
+            font-size: 14px;
+            height: 32px /* 調整高度和文字一樣*/
+        }
+        ul.nav span {
+            margin-right: 5px;
+        }
+        ul.nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-icons a {
+            margin-bottom: 10px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #backtotop:hover{
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 網站圖標 -->
+    <a href="https://www.chinatimes.com/?chdtv"><img src="./images/中時icon.PNG" alt="icon" title="icon" width="200"></a>
+    <hr>
+    <!-- 導覽列 -->
+    <ul class="nav">
+        <span><a href="https://www.chinatimes.com/?chdtv">首頁</a></span>
+        <span>/</span>
+        <span><a href="https://www.chinatimes.com/life?chdtv">生活</a></span>
+    </ul>
+    <!-- 主要標題 -->
+    <h1 id="main-title">反聖嬰成形！專家示警：颱風會較靠近台灣</h1>
+    <hr>
+    <!-- 記者資訊 -->
+    <span class="reporter-info">2024/05/29 中時新聞網 莊楚雯</span>
+    <hr>
+    <!-- 主要圖片及其說明 -->
+    <figure style="text-align: center;">
+        <a href="https://www.cwa.gov.tw/V8/C/" target="_blank"><img src="https://images.chinatimes.com/newsphoto/2024-05-29/1024/20240529001422.png" alt="typhoon" title="颱風" width="900">
+        <figcaption>林得恩指出，今年夏季發生反聖嬰的機率大增，一旦有颱風生成，通常會比較靠近台灣。圖為衛星雲圖。（翻攝自氣象署）</figcaption></a>
+    </figure>
+    <hr>
+    <!-- 主要內容段落 -->
+    <div style="text-align: center;">
+        <p>反聖嬰現象要來了，氣象專家林得恩表示，聖嬰現象的訊號已近尾聲，下半年反聖嬰現象將再接手，而反聖嬰現象發生時，<br>台灣夏天和隔年的春雨的降雨量會減少，冬天氣溫較低，且西北太平洋颱風生成數量減少，不過一旦生成，通常會比較靠近台灣。</p>
+    </div>
+    <div>
+        <p>林得恩今日在臉書「林老師氣象站」指出，反聖嬰幾乎篤定成形，根據美國國家氣象局的氣象預報中心5月最新研究，目前最新氣候預報模式模擬顯示，聖嬰現象的訊號已近尾聲，隨後反聖嬰現象將再度接手，預估7至9月形成的機率提升為69%；9月之後，反聖嬰形成的機率都在80%以上；11至隔年1月發生的可能性也提昇至87%。整體來看，反聖嬰發生的機率愈來愈大。</p>
+        <p>林得恩表示，反聖嬰現象可能對台灣天氣造成影響，根據過去的歷史事件統計分析，反聖嬰現象發生時，當年台灣夏天及隔年春雨的降雨量都減少，秋季在東北部及東部的降雨量會增多，冬天到隔年春季氣溫會比較低；另一方面，西北太平洋颱風生成數量會減少，但一旦颱風生成，通常都會比較靠近台灣。中央氣象署預報中心之前也指出，聖嬰現象持續減弱，今年夏季轉為反聖嬰的機率大增，從過去經驗來看，反聖嬰將導致太平洋高壓偏強，但實際影響還要再觀察，並強調這不代表颱風會變多或變強，而是取決於當時的生成環境。</p>
+    </div>
+    <!-- 附加圖片及其說明 -->
+    <figure style="text-align: center;">
+        <img src="https://images.chinatimes.com/newsphoto/2024-05-29/1024/20240529001452.jpg" alt="chart" title="title" width="900">
+        <figcaption>美國國家氣象局最新氣候預報顯示，聖嬰現象的訊號已近尾聲，下半年反聖嬰現象將再度接手。（翻攝自林老師氣象站FB）</figcaption>
+    </figure>
+    <hr>
+    <!-- 更多報導 -->
+    <div class="more-reports" >
+        <h2>更多報導</h2>
+        <ul style="text-align: left;">
+            <li><a href="https://www.chinatimes.com/realtimenews/20240529001114-260405?chdtv">午後大雨續炸！周末全台雨更猛 艾維尼強度達巔峰</a></li>
+            <li><a href="https://www.chinatimes.com/realtimenews/20240529001114-260405?chdtv">洗手台膠條發霉到黑！內行教省錢招數：一覺醒來變白</a></li>
+            <li><a href="https://www.chinatimes.com/realtimenews/20240528002371-260405?chdtv">螞蟻爬滿桌怎辦？他用1物大讚：家裡沒再看過半隻</a></li>
+        </ul>
+    </div>
+    <!-- 嵌入影片 -->
+    <div class="video-container">
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/p7ZsBPK656s?list=PLyjhTeEl5_aowzTy0IdAyIs1784p2kGY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>    
+    <!-- 社群圖標 -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><img src="./images/facebook_icon.png" alt="Facebook" title="Facebook"></a>
+        <a href="https://line.me/en/"><img src="./images/line_icon.png" alt="LINE" title="LINE"></a>
+        <a href="mailto:jkldsa1347@gmail.com"><img src="./images/gmail_icon.png" alt="Gmail" title="Gmail"></a>
+    </div>
+    <ul style="text-align: center;">
+        <!-- 回到標題按鈕 -->
+        <a href="#main-title" id="backToTitleBtn" title="回到標題" >回到頂部</a>
+        <a href="https://www.chinatimes.com/?chdtv">首頁</a>
+    </ul>
+
+</body>
+</html>

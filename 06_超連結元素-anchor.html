@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>超連結元素 anchor</title>
+  </head>
+  <body>
+    <h2>外部連結</h2>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com" target="_blank">Google (開啟新分頁)</a>
+
+    <h2>網站內部連結</h2>
+    <a href="./04_圖片元素-image.html">圖片元素-image</a>
+
+    <h2>網頁內部連結(錨點)</h2>
+    <a href="#target1">錨點1</a>
+    <a href="#target2">錨點2</a>
+    <a href="#target3">錨點3</a>
+    <a href="#target4">錨點4</a>
+    <div style="height: 100vh; background-color: pink"></div>
+    <p id="target1">指定目標元素1</p>
+    <div style="height: 100vh; background-color: yellowgreen"></div>
+    <p id="target2">指定目標元素2</p>
+    <div style="height: 100vh; background-color: lightblue"></div>
+    <p id="target3">指定目標元素3</p>
+    <div style="height: 100vh; background-color: salmon"></div>
+    <p id="target4">指定目標元素4</p>
+    <div style="height: 100vh; background-color: orange"></div>
+
+    <h2>清單結合超連結</h2>
+    <ul>
+      <!-- 方式一 -->
+      <a
+        href="https://news.ttv.com.tw/news/11305100000800W?utm_source=yahoo&utm_medium=InArticl"
+        target="_blank"
+      >
+        <li style="background-color: pink">
+          「白女婿」來了！《淚之女王》金秀賢7/6登台 睽違10年會台粉
+        </li>
+      </a>
+      <!-- 方式二 -->
+      <li>
+        <a
+          href="https://news.ttv.com.tw/news/11305070002400W?utm_source=yahoo&utm_medium=InArticl"
+          target="_blank"
+          style="background-color: pink"
+        >
+          百想藝術大賞得獎名單出爐 南宮珉封視帝、金高銀奪影后
+        </a>
+      </li>
+      <li>《淚之女王》金智媛罹患「膠質母細胞瘤」！ 醫揭「治療5方式」</li>
+    </ul>
+
+    <h2>電子郵件</h2>
+    <a
+      href="mailto:eddiewang@ispan.com.tw?subject=學員請假&body=姓名：%0a班級：%0a請假日期："
+      >客服信箱</a
+    >
+
+    <h2>撥號</h2>
+    <a href="tel:0266316588">資展國際電話</a>
+
+    <h2>檔案檢視/下載</h2>
+    <a href="./網頁設計入門_240221.pdf">檔案檢視</a>
+    <a href="./網頁設計入門_240221.pdf" download>檔案下載</a>
+  </body>
+</html>

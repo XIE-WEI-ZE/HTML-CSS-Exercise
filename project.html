@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(https://scpic.chinaz.net/files/pic/moban/201606/ppt5380.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      padding: 20px 20px;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000; /* 設置較高的 z-index 確保導航欄在最前面 */
+      position: relative;
+    }
+    .logo img {
+      height: 100px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li {
+      position: relative;
+      margin-right: 15px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 25px 25px;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+    nav ul li:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      border: 1px solid #ccc;
+      font-size: 20px;
+    }
+    .submenu li a {
+      padding: 10px;
+      white-space: nowrap;
+    }
+    nav ul li:hover .submenu {
+      display: block;
+    }
+    .right-menu {
+      display: flex;
+      align-items: center;
+    }
+    .right-menu a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      font-size: 20px;
+      position: relative;
+    }
+    .right-menu a img {
+      width: 20px;
+      height: 20px;
+      transition: content 0.5s ease;
+    }
+    .right-menu a.search img {
+      content: url(./images/search.png);
+    }
+    .right-menu a.search:hover img {
+      content: url("./images/search_icon.gif");
+    }
+    fieldset {
+      border: 2px solid rgb(56, 180, 139);
+      border-radius: 25px; /* 調整邊框圓角 */
+      padding: 20px;
+      position: relative;
+      width: 40%; /* 調整寬度 */
+      margin: left; /* 居中顯示 */
+      background-color: rgba(233, 229, 229, 0.5); /* 半透明黑色背景 */
+    }
+
+    legend {
+      padding: 0 10px;
+      font-size: 50px;
+      font-weight: bold;
+      color: rgb(17, 19, 18);
+    }
+    .table {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-start; /* 使項目從左到右排列 */
+    }
+    .table-item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .table-item img,
+    .table-item video {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .table-item .description {
+      padding: 15px;
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="Personal_Information.html"><img src="./images/LOGO.JPG" alt="Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Personal_Information.html">回首頁</a></li>
+        <li>
+          <a href="#">關於我</a>
+          <ul class="submenu">
+            <li><a href="about_me.html#about-me">簡單自介</a></li>
+            <li><a href="about_me.html#interests">興趣</a></li>
+            <li><a href="about_me.html#social-link">社群連結</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">作品集</a>
+          <ul class="submenu">
+            <li><a href="project.html#u_work">學生時期作品</a></li>
+            <li><a href="project.html#iSpan_work">資策會時期作品</a></li>
+          </ul>
+        </li>
+        <li><a href="#">目前的計畫</a></li>
+      </ul>
+    </nav>
+    <div class="right-menu">
+      <a href="#" class="search">
+        <img src="./images/search_icon.png" alt="search" title="search" /><span class="search">尋找</span>
+      </a>
+      <a href="#">
+        <img src="./images/register_icon.png" alt="" /><span class="register">加入</span>
+      </a>
+      <a href="https://www.google.com/"><img src="./images/bye_icon.png" alt="" /><span>離別</span></a>
+    </div>
+  </header>
+  <hr>
+  <h1>這裡記錄我大學時期以及資策會時的相關作業練習</h1>
+  <fieldset class="fieldset">
+    <legend class="legend" id="u_work">大學時期作品</legend>
+    <div class="table">
+      <div class="table-item">
+        <a href="https://drive.google.com/drive/folders/1sllpHTjGh8DLtRkJ3NG9v96lJZXs3ihi?usp=sharing">
+          <img src="./images/個人網站練習/c++.jpg" alt="資料結構">
+          <div class="description">用C++去實作出一些基本的排序問題</div>
+        </a>
+      </div>
+      <div class="table-item">
+        <a href="https://github.com/XIE-WEI-ZE/Use-matlab-for-CAPTCHA-recognition..git">
+          <img src="./images/個人網站練習/matlab.jpg" alt="作品2">
+          <div class="description">將欲判別驗證碼圖片進行轉黑白、膨脹腐蝕、開閉運算、分割…等技術後，再與預先設置好的數字圖片進行各個比對，來達到判別驗證碼上的數字為何的效果。</div>
+        </a>
+      </div>
+      <div class="table-item">
+        <a href="https://github.com/jkldsa1347/Designing-an-Educational-Administration-System-Using-JAVA.git">
+          <img src="./images/個人網站練習/java.jpg" alt="作品2">
+          <div class="description">利用上課學到的內容來實作一套學校教務系統，內容包含管理端、教師端、學生端的各種功能。其中有使用到gui function、演算法及資料庫應用。</div>
+        </a>
+      </div>
+      <div class="table-item">
+        <a href="https://docs.google.com/document/d/15zqWJYSOwnCJpjQiEupwKMM1A9wbkMQD/edit?usp=sharing&ouid=114507968847446976291&rtpof=true&sd=true">
+          <img src="./images/個人網站練習/python.jpg" alt="作品2">
+          <div class="description">我們這次做的主題是COVID-19病例數預測，使用的資料是從kaggle中下載的，本實作中我們將在Pytorch中構建一個簡單的深度學習網路，使用簡易的兩層fully-connected layers進行迴歸分析的實作。</div>
+        </a>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="fieldset">
+    <legend class="legend" id="iSpan_work">資策會時期作品</legend>
+    <div class="table">
+      <div class="table-item">
+        <a href="https://github.com/XIE-WEI-ZE/Java-exercises-in-iSpan.git">
+          <img src="./images/老婆.jpg" alt="作品1">
+          <div class="description">記錄每一次上課後的Java課後作業</div>
+        </a>
+      </div>
+      <div class="table-item">
+        <a href="https://github.com/XIE-WEI-ZE/First_JDBC_Project_in_iSpan.git">
+          <img src="./images/cat.jpeg" alt="作品2">
+          <div class="description">此專案從指定的 URL 獲取數據，將數據存儲在 SQL Server 數據庫中，並提供一系列功能來對數據進行增刪改查（CRUD）操作。</div>
+        </a>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="fieldset">
+    <legend class="legend" id="video_work">專題相關報告影片</legend>
+    <div class="table">
+      <div class="table-item">
+        <video controls>
+          <source src="./images/個人網站練習/報告影音.mp4" type="video/mp4">
+          您的瀏覽器不支持 HTML5 視頻標籤。
+        </video>
+        <div class="description">影像處理期末報告</div>
+      </div>
+    </div>
+  </fieldset>
+</body>
+</html>

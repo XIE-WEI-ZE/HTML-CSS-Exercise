@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSpan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "標楷體", sans-serif;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 12px;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            
+            padding: 32px 10px 33px;
+            margin-right: 20px 24px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            background-color: #e0e0e0;
+            text-decoration: overline;
+        }
+
+        .right-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-menu a {
+            text-decoration: none;
+            color: #fff;
+            background: #003399;
+            padding: 10px;
+            /* margin-left: 10px; */
+            border-radius: 0;
+            font-size: 16px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .right-menu a i {
+            margin-bottom: 5px;
+        }
+
+        .content {
+            padding-top: 80px; /* 根據 header 的高度調整，避免內容被 header 擋住 */
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.8;
+        margin: 20px;
+        color: #333;
+    }
+h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+.map-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+iframe {
+        width: 50%;
+        height: 850px;
+        border: 0;
+    }
+.video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+video {
+        width: 100%;
+        height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://www.ispan.com.tw/"><img src="https://www.ispan.com.tw/img/Logoslogan_sm.png" alt="iSpan Logo">
+                <span></span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">就業養成</a></li>
+                    <li><a href="#">在職培訓</a></li>
+                    <li><a href="#">學員服務</a></li>
+                    <li><a href="#">企業服務</a></li>
+                    <li><a href="#">最新活動</a></li>
+                </ul>
+            </nav>
+            <div class="right-menu">
+                <a href="#"><span class="search"></span>搜尋</a>
+                <a href="#"><span class="user-plus"></span>註冊</a>
+                <a href="17_表單元素-form.html"><span class="sign-in-alt"></span>登入</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <!-- 這裡放置頁面的其他內容 -->
+    </div>
+    <br>
+    <h3>資展國際台北分區</h3>
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.004603539571!2d121.54083797595618!3d25.033917838293743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0xedc006d25a9e35df!2z6LOH5bGV5ZyL6Zqb6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1717134556759!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <br>
+    <h3>資展國際高雄分區</h3>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.685143944861!2d120.29046327590393!3d22.628229830927964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05f5a79b7517%3A0x9c0020e1575c5ebf!2z6LOH5bGV5ZyL6ZqbLemrmOmbhOiok-e3tOS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1717134500417!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h3>上課內容</h3>
+    <div class="video-container">
+        <video controls>
+            <source src="./images/2024-05-29 09-04-59.mkv" type="video/mp4">
+        </video>
+    </div>
+    <h3>PPT</h3>
+    <iframe src="https://docs.google.com/presentation/d/1emu7FW3WvlyBiiOSlZYdQEzTGHJLF0Dw/edit?usp=sharing&ouid=114507968847446976291&rtpof=true&sd=true" frameborder="0">提供相關pdf</iframe>
+    <h3>表單</h3>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0ZS1i7kdy2RxP82W1JHZAEMVetXK3MK1GkwX-z87Vvductg/viewform?usp=sharing" frameborder="0">表單</iframe>
+    <h3>pdf</h3>
+    <iframe src="https://drive.google.com/file/d/1U-A_BngwWTOXeQw61Rx1bruj2MeOYn_7/preview" frameborder="0">表單</iframe>
+</body>
+</html>

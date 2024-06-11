@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <style>
+        .q1 {
+            width: 450px;
+            border-bottom: 2px dashed gray;
+            padding-bottom: 20px;
+            margin: 20px;
+        }
+        .q1:last-child {
+            border-bottom: none;
+        }
+
+        .t1 {
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .btns {
+            margin: 20px;
+        }
+        fieldset {
+            width: 500px;
+            margin: 20px;
+            border: 2px solid salmon;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>登入頁面</h1>
+    <fieldset>
+        <legend>基本資料(一)</legend>
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <div class="q1">
+                <label for="myName" class="t1">姓名:</label>
+                <input type="text" name="userName" id="myName" value="" placeholder="請輸入姓名">
+            </div>
+            <div class="q1">
+                <label for="myPassword" class="t1">密碼: </label>
+                <input type="text" name="userPassword" id="myPassword" value="" placeholder="請輸入密碼" maxlength="8">
+            </div>
+        </fieldset>
+
+        <h2>認證問題</h2>
+        <fieldset>
+            <legend>基本資料(二)</legend>
+            <div class="q1">
+                <span class="t1">性別:</span>
+                <label><input type="radio" name="userGender" value="male" checked> 男孩</label>
+                <label><input type="radio" name="userGender" value="female"> 女孩</label>
+                <label><input type="radio" name="userGender" value="shmale"> 人妖</label>
+            </div>
+            <div class="q1">
+                <span class="t1">興趣:</span>
+                <label><input type="checkbox" name="userInterest" value="游泳"> 游泳</label>
+                <label><input type="checkbox" name="userInterest" value="爬山"> 爬山</label>
+                <label><input type="checkbox" name="userInterest" value="釣魚"> 釣魚</label>
+            </div>
+            <div class="q1">
+                <label for="city" class="t1">居住縣市:</label>
+                <select name="userCity" id="city">
+                    <option value="台北市">台北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="台中市">台中市</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="新竹市">新竹市</option>
+                    <option value="嘉義市">嘉義市</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>基本資料(三)</legend>
+            <div class="q1">
+                <label for="myFile" class="t1">檔案上傳:</label>
+                <input type="file" name="userFile" id="myFile">
+            </div>
+            <div class="q1">
+                <label for="myMemo" class="t1">備忘錄:</label>
+                <textarea name="userMemo" id="myMemo" placeholder="請輸入文字" cols="30" rows="10">預設文字</textarea>
+            </div>
+        </fieldset>
+        <div class="btns">
+            <input type="submit" value="送出">
+            <input type="reset" value="重設">
+            <input type="button" value="一般按鈕" disabled>
+            <button type="button">一般按鈕</button>
+        </div>
+    </form>
+</body>
+</html>

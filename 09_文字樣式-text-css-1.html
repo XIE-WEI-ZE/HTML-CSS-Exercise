@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字樣式 text css</title>
+    <!-- 外部來源載入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Cursive_Script";
+        src: url(./fonts/Cursive_Script.ttf);
+      }
+      p {
+        font-size: 40px;
+      }
+      .font1 {
+        font-family: "標楷體";
+      }
+      .font2 {
+        font-family: "新細明體";
+      }
+      .font3 {
+        font-family: "Cursive_Script";
+      }
+      .googlefont1 {
+        font-family: "Jacquard 12";
+      }
+      .font4{
+        font-style: normal;
+      }
+      .font5{
+        font-style: italic;
+      }
+      .font6{
+        font-style: oblique;
+      }
+      .font7{
+        text-transform: capitalize;
+      }
+      .font8{
+        text-transform: uppercase;
+      }
+      .font9{
+        text-transform: lowercase;
+      }
+
+      .underline{
+        text-decoration-line: underline;
+      }
+      .overline{
+        text-decoration-line: overline;
+      }
+      .linethrough{
+        text-decoration: line-through;
+      }
+
+      .wavy{
+        text-decoration-style: wavy;
+      }
+      .dotted{
+        text-decoration-style: dotted;
+      }
+
+      .double{
+        text-decoration-style: double;
+      }
+
+      .red{
+        color: red;
+        text-decoration-color: red;
+      }
+      .green{
+        color: green;
+        text-decoration-color: green;
+      }
+      .blue{
+        color: blue;
+        text-decoration-color: blue;
+      }
+
+      .all{
+        text-decoration: overline dashed salmon;
+      }
+
+      .none{
+        color: black;
+        text-decoration: none;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>文字字型</h2>
+    <p>正黑體(預設)</p>
+    <p class="font1">標楷體</p>
+    <p class="font2">新細明體</p>
+    <p class="font3">特殊字型</p>
+    <p class="googlefont1">特殊字型abcdef</p>
+
+    <h2>文字樣式</h2>
+    <p class="font4">特殊字型</p>
+    <p class="font5">特殊字型</p>
+    <p class="font6">特殊字型</p>
+
+    <h2>文字大小寫轉換</h2>
+    <p>Ldsaukighu aJKHU hjhkA</p>
+    <p class="font7">Ldsaukighu aJKHU hjhkA</p>
+    <p class="font8">Ldsaukighu aJKHU hjhkA</p>
+    <p class="font9">Ldsaukighu aJKHU hjhkA</p>
+
+    <h2>文字裝飾(線條)</h2>
+    <p class="underline">資展國際</p>
+    <p class="overline">資展國際</p>
+    <p class="linethrough">資展國際</p>
+
+    <h2>文字裝飾(樣式)</h2>
+    <p class="underline wavy">資展國際</p>
+    <p class="overline dotted">資展國際</p>
+    <p class="linethrough double">資展國際</p>
+
+    <h2>文字裝飾(顏色)</h2>
+    <p class="underline wavy red">資展國際</p>
+    <p class="overline dotted green">資展國際</p>
+    <p class="linethrough double blue">資展國際</p>
+
+    <h2>文字裝飾(速寫)</h2>
+    <p class="all">速寫的文字</p>
+    <a href="#" class="none">超連結</a>
+  </body>
+</html>

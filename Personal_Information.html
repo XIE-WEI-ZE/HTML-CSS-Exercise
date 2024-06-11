@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人簡歷</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(https://www.beautifulfeed.com/wp-content/uploads/2018/09/Rain-Wallpapers-31-1068x659.jpeg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      padding: 20px 20px;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000; /* 設置較高的 z-index 確保導航欄在最前面 */
+      position: relative;
+    }
+    .logo img {
+      height: 100px;
+    }
+    nav {
+      flex-grow: 1;
+      margin-left: 20px;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li {
+      position: relative;
+      margin-right: 15px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 25px 25px;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+    nav ul li:hover > a {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      border: 1px solid #ccc;
+      font-size: 20px;
+    }
+    .submenu li a {
+      padding: 10px;
+      white-space: nowrap;
+    }
+    nav ul li:hover .submenu {
+      display: block;
+    }
+    .right-menu {
+      display: flex;
+      align-items: center;
+    }
+    .right-menu a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      font-size: 20px;
+      position: relative;
+    }
+    .right-menu a img {
+      width: 20px;
+      height: 20px;
+      transition: content 0.5s ease;
+    }
+    .right-menu a.search img {
+      content: url("./images/search.png"); /* 初始顯示靜態圖片 */
+    }
+    .right-menu a.search:hover img {
+      content: url("./images/search_icon.gif"); /* 懸停時顯示動態圖片 */
+    }
+    .right-menu a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #div19 {
+      font-size: 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    #div19 img {
+      width: 125px; /* 調整圖片大小 */
+      height: 300px; /* 調整圖片大小 */
+      border-radius: 50px; /* 調整圖片邊框圓角 */
+      margin-right: 10px; /* 調整圖片之間的間距 */
+    }
+
+    .countdown-timer {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .countdown-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .countdown-images img {
+      width: 125px; /* 調整倒數計時圖片大小 */
+      height: 300px; /* 調整倒數計時圖片大小 */
+      margin-right: 5px; /* 調整圖片之間的間距 */
+    }
+
+    fieldset {
+      border: 2px solid rgb(56, 180, 139);
+      border-radius: 25px; /* 調整邊框圓角 */
+      padding: 20px;
+      position: relative;
+      width: 40%; /* 調整寬度 */
+      margin: left; /* 居中顯示 */
+      background-color: black;
+    }
+
+    legend {
+      padding: 0 10px;
+      font-size: 50px;
+      font-weight: bold;
+      color: rgb(128, 201, 161);
+    }
+  </style>
+</head>
+<body>
+  <!-- 頁面頭部，包括導航欄 -->
+  <header class="header">
+    <div class="logo">
+      <a href="Personal_Information.html"><img src="./images/LOGO.JPG" alt="Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Personal_Information.html">回首頁</a></li>
+        <li>
+          <a href="#">關於我</a>
+          <ul class="submenu">
+            <li><a href="about_me.html#about-me">簡單自介</a></li>
+            <li><a href="about_me.html#interests">興趣</a></li>
+            <li><a href="about_me.html#social-link">社群連結</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">作品集</a>
+          <ul class="submenu">
+            <li><a href="project.html#u_work">學生時期作品</a></li>
+            <li><a href="project.html#iSpan_work">資策會時期作品</a></li>
+          </ul>
+        </li>
+        <li><a href="#">目前的計畫</a></li>
+      </ul>
+    </nav>
+    <div class="right-menu">
+      <a href="#" class="search"><img src="./images/search_icon.png" alt="search" title="search" /><span class="search"></span>尋找</a>
+      <a href="#"><img src="./images/register_icon.png" alt="" /><span class="register"></span>加入</a>
+      <a href="https://www.google.com/"><img src="./images/bye_icon.png" alt="" /><span></span>離別</a>
+    </div>
+  </header>
+  <hr />
+
+  <!-- 顯示時鐘的區域 -->
+  <fieldset>
+    <legend>這一切都是Steins;Gate的選擇！</legend>
+    <div id="div19">
+      <img src="./images/命運石之門時鐘圖/0.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" />
+      <img src="./images/命運石之門時鐘圖/p.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" />
+      <img src="./images/命運石之門時鐘圖/p.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" />
+    </div>
+  </fieldset>
+
+  <!-- 在這裡插入倒數計時器 -->
+  <fieldset>
+    <legend>距離資策會結訓之日(Day-Hr-Min-Sec)</legend>
+    <div id="countdown" class="countdown-images">
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-days-1" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-days-2" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-days-3" />
+      <img src="./images/命運石之門時鐘圖/p.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-hours-1" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-hours-2" />
+      <img src="./images/命運石之門時鐘圖/p.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-minutes-1" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-minutes-2" />
+      <img src="./images/命運石之門時鐘圖/p.png" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-seconds-1" />
+      <img src="./images/命運石之門時鐘圖/0.png" id="countdown-seconds-2" />
+    </div>
+  </fieldset>
+
+  <script src="./clock.js"></script>
+  <script src="./countdown.js"></script>
+</body>
+</html>

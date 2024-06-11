@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>網頁頁首 header</title>
+    <style>
+      /* logo */
+      .header img {
+        float: left;
+        margin-left: 50px;
+      }
+      /* 右側按鈕群組 */
+      .btnGroup {
+        float: right;
+        line-height: 50px;
+        font-size: 0;
+      }
+      /* 右側按鈕超連結 */
+      .btnGroup a {
+        color: #c7c7c7;
+        background-color: #1e3c84;
+        padding: 18px;
+        margin: 0;
+        font-size: 16px;
+      }
+      /* 網站地圖 */
+      .nav {
+        text-align: center;
+        line-height: 50px;
+      }
+      /* 超連結基本設定 */
+      a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+
+      /* flexbox設定 */
+      .box{
+            border: 2px solid salmon;
+            /* 容器變成彈性盒子 */
+            display: flex;
+            /* 內容出發方向 */
+            flex-direction: row;
+            /* 內容出發方向的對齊方式 */
+            justify-content: space-between;
+            /* 垂直對齊方式 */
+            align-items: center;
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+
+        .box .nav,.box .btnGroup{
+            line-height: unset;
+        }
+        .box .btnGroup a{
+            padding: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>float排版方式</h2>
+    <div class="header">
+      <img
+        src="https://www.ispan.com.tw/img/Logoslogan_sm.png"
+        alt=""
+        height="50"
+      />
+
+      <div class="btnGroup">
+        <a href="#">搜尋</a>
+        <a href="#">註冊</a>
+        <a href="#">登入</a>
+      </div>
+
+      <div class="nav">
+        <a href="#">關於我們</a>
+        <a href="#">就業養成</a>
+        <a href="#">在職培訓</a>
+        <a href="#">學員服務</a>
+        <a href="#">企業服務</a>
+        <a href="#">最新活動</a>
+      </div>
+    </div>
+
+    <hr> 
+
+    <h2>
+        flexbox切版方式
+    </h2>
+    <div class="box">
+        <img
+        src="https://www.ispan.com.tw/img/Logoslogan_sm.png"
+        alt=""
+        height="50"
+      />
+      <div class="nav">
+        <a href="#">關於我們</a>
+        <a href="#">就業養成</a>
+        <a href="#">在職培訓</a>
+        <a href="#">學員服務</a>
+        <a href="#">企業服務</a>
+        <a href="#">最新活動</a>
+      </div>
+        <div class="btnGroup">
+            <a href="#">搜尋</a>
+            <a href="#">註冊</a>
+            <a href="#">登入</a>
+          </div>
+    </div>
+  </body>
+</html>

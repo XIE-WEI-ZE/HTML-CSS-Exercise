@@ -1,0 +1,47 @@
+23_定位方式-position.html
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位方式 position</title>
+    <style>
+        .r{
+            background-color: lightblue;
+            position: relative;
+            left: 300px;
+            top: 500px;
+        }
+        .a{
+            background-color: pink;
+            position: absolute;
+            top: 600px;
+            left: 800px;
+        }
+        .f{
+            background-color: yellowgreen;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="r">relative</div>
+    <div class="a">absolute</div>
+    <div class="f">fixed</div>
+    <div>static</div>
+
+    <hr>
+
+    <main>
+        <section class="r">section
+            <div>
+                <article>
+                    <p class="a">absolute - 複雜結構</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

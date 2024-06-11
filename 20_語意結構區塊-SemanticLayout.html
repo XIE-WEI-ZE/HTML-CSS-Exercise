@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語意結構區塊 Semantic Layout</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+        main{
+            /* float: left; */
+            border: 5px solid black;
+            width: 80%;
+            box-sizing: border-box;
+            height: 500px;
+        }
+        aside{
+            /* float: right; */
+            border: 5px solid black;
+            width: 20%;
+            box-sizing: border-box;
+            height: 500px;
+        }
+        footer{
+            /* clear: both; */
+        }
+        .flexbox{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/Bulbasaur.jpg" height="50" alt="">
+        <nav>nav</nav>
+        <div>
+            signin/singup/search
+        </div>
+    </header>
+    <div class="flexbox">
+        <main>
+            main
+            <section></section>
+            <section></section>
+            <section></section>
+            <article></article>
+            <article></article>
+            <article></article>
+        </main>
+        <aside>aside</aside>
+    </div>
+    <footer>
+        copyright、sitemap、socialmedia link、....
+    </footer>
+</body>
+</html>

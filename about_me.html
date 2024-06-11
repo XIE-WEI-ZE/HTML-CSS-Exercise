@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AboutMe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(https://scpic.chinaz.net/files/pic/moban/201606/ppt5380.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      padding: 20px 20px;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000; /* 設置較高的 z-index 確保導航欄在最前面 */
+      position: relative;
+    }
+    .logo img {
+      height: 100px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li {
+      position: relative;
+      margin-right: 15px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 25px 25px;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+    nav ul li:hover > {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(248, 248, 248, 0.8); /* 半透明背景 */
+      border: 1px solid #ccc;
+      font-size: 20px;
+    }
+    .submenu li a {
+      padding: 10px;
+      white-space: nowrap;
+    }
+    nav ul li:hover .submenu {
+      display: block;
+    }
+    .right-menu {
+      display: flex;
+      align-items: center;
+    }
+    .right-menu a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      font-size: 20px;
+      position: relative;
+    }
+    .right-menu a img {
+      width: 20px;
+      height: 20px;
+      transition: content 0.5s ease;
+    }
+    .right-menu a.search img {
+      content: url(./images/search.png);
+    }
+    .right-menu a.search:hover img {
+      content: url("./images/search_icon.gif");
+    }
+
+    .profile-content {
+      overflow: hidden;
+      padding: 20px;
+      background: url(https://newtaipei.travel/content/images/attractions/45791/1024x768_attractions-image-kqlucfzl4u6h7sygrh1o4w.jpg);
+      background-repeat: no-repeat;
+    }
+    div p {
+      font-size: 20px;
+      font-weight: bold;
+      color: wheat;
+    }
+    p {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: left;
+      margin-right: 20px;
+    }
+    table {
+      width: 45%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid gray;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="Personal_Information.html"><img src="./images/LOGO.JPG" alt="Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Personal_Information.html">回首頁</a></li>
+        <li>
+          <a href="#">關於我</a>
+          <ul class="submenu">
+            <li><a href="about_me.html#about-me">簡單自介</a></li>
+            <li><a href="about_me.html#interests">興趣</a></li>
+            <li><a href="about_me.html#social-link">社群連結</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">作品集</a>
+          <ul class="submenu">
+            <li><a href="project.html#u_work">學生時期作品</a></li>
+            <li><a href="project.html#iSpan_work">資策會時期作品</a></li>
+          </ul>
+        </li>
+        <li><a href="#">目前的計畫</a></li>
+      </ul>
+    </nav>
+    <div class="right-menu">
+      <a href="#" class="search">
+        <img src="./images/search_icon.png" alt="search" title="search" /><span class="search">尋找</span>
+      </a>
+      <a href="#">
+        <img src="./images/register_icon.png" alt="" /><span class="register">加入</span>
+      </a>
+      <a href="https://www.google.com/"><img src="./images/bye_icon.png" alt="" /><span>離別</span></a>
+    </div>
+  </header>
+  <hr>
+  <header class="profile-content">
+    <img
+      class="profile-img"
+      src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t39.30808-6/441241400_284463864723134_7640419201598070119_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=rhTFgSoH0b0Q7kNvgE2FHM3&_nc_ht=scontent.fkhh1-2.fna&oh=00_AYBYNYRM-mmYn3F0AI5HMpuLsXycSIJH-Fkr7h6VdytdLg&oe=666066D6"
+      alt="謝維澤"
+      title="謝維澤"
+    />
+    <div>
+      <h1>謝維澤/XIE-WEI-ZE</h1>
+    </div>
+  </header>
+  <h2 id="about-me">簡單自介</h2>
+  <p>
+    您好，我叫謝維澤，來自中華民國台灣省新北市，大學畢業於國立台灣海洋大學通訊與導航工程學系。<br />在大學四年裡的理工訓練背景讓我具備一定的解決問題能力和邏輯思維。<br />我的目標是成為一名專業的Java後端工程師，目前正在iSpan精進後端開發所需的技能，包括Java、SQL Server、Vue.js和Git。
+  </p>
+  <p>
+    Hello, my name is Xie Wei-Ze, and I am from New Taipei City, Taiwan, Republic of China.<br /> I graduated from the Department of Communication and Navigation Engineering at National Taiwan Ocean University.<br /> During my four years in university, my engineering background has equipped me with strong problem-solving skills and logical thinking.<br /> My goal is to become a professional Java backend engineer. Currently, I am enhancing my backend development skills at iSpan,<br />focusing on Java, SQL Server, Vue.js, and Git.
+  </p>
+  <hr />
+  <h2>在校時期曾修過與電腦科學有關的課程</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>年級</th>
+        <th>課程名稱</th>
+        <th>授課科系</th>
+        <th>使用語言</th>
+        <th>成績</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>大一</td>
+        <td>計算機實習</td>
+        <td>通訊與導航</td>
+        <td>C</td>
+        <td>63</td>
+      </tr>
+      <tr>
+        <td>大一</td>
+        <td>計算機概論</td>
+        <td>通訊與導航</td>
+        <td>C</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>大二</td>
+        <td>程式設計</td>
+        <td>通訊與導航</td>
+        <td>C++</td>
+        <td>78</td>
+      </tr>
+      <tr>
+        <td>大二</td>
+        <td>空間資訊概論</td>
+        <td>通訊與導航</td>
+        <td>Matlab</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>大二</td>
+        <td>計算機組織</td>
+        <td>通訊與導航</td>
+        <td>C++</td>
+        <td>68</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>訊號與系統</td>
+        <td>通訊與導航</td>
+        <td>Matlab</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>導航實習</td>
+        <td>通訊與導航</td>
+        <td>Java</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>控制實習</td>
+        <td>通訊與導航</td>
+        <td>Matlab</td>
+        <td>83</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>資料庫系統導論</td>
+        <td>造船</td>
+        <td>MySQL</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>先進資通訊科技在智慧運輸應用</td>
+        <td>運輸</td>
+        <td>Python</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>Java軟體設計</td>
+        <td>通訊與導航</td>
+        <td>Java</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>工程統計</td>
+        <td>通訊與導航</td>
+        <td>Matlab</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>演算法概論</td>
+        <td>通訊與導航</td>
+        <td>Python</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>Python科學計算</td>
+        <td>通訊與導航</td>
+        <td>Python</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>深度學習</td>
+        <td>通訊與導航</td>
+        <td>Python</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>大三</td>
+        <td>資料結構</td>
+        <td>通訊與導航</td>
+        <td>C++</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>大四</td>
+        <td>數位影像處理</td>
+        <td>通訊與導航</td>
+        <td>Matlab</td>
+        <td>76</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h2 id="interests">喜好</h2>
+  <ul>
+    <li>
+      閱讀
+      <ul>
+        <li>1. 推理小說(最近剛看完東野圭吾的天鵝和蝙蝠)</li>
+        <li>2. 輕小說</li>
+        <li>3. 漫畫</li>
+        <li>4. 歷史書籍(EX:史記)</li>
+      </ul>
+    </li>
+    <li>
+      運動
+      <ul>
+        <li>1. 健身</li>
+        <li>2. 爬山</li>
+        <li>3. 游泳</li>
+      </ul>
+    </li>
+    <li>
+      品嘗美食
+      <ul>
+        <li>1. 各縣市有名的路邊小吃</li>
+        <li>2. 海鮮</li>
+        <li>3. 異國料理</li>
+      </ul>
+    </li>
+  </ul>
+  <hr />
+  <section class="social" id="social-link">
+    <h2>社群連結</h2>
+    <a href="https://www.facebook.com/profile.php?id=100094785663733"
+      ><img src="./images/facebook_icon.png" alt="fb" title="fb"
+    /></a>
+    <a href="https://www.linkedin.com/in/xieweize"
+      ><img src="./images/linkedin_icon.png" alt="linkedin" title="linkedin"
+    /></a>
+    <a href="https://github.com/XIE-WEI-ZE"
+      ><img src="./images/github_icon.png" alt="github" title="github"
+    /></a>
+  </section>
+</body>
+</html>

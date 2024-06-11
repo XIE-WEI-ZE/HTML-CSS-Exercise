@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格元素 table</title>
+    <style>
+        .table1{
+            width: 1200px;
+            border: 5px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            height: 50px;
+            border: 2px solid gray;
+            text-align: center;
+        }
+        .table1 thead tr{
+            background-color: #9A0036;
+            color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
+        }
+
+        tbody > tr:hover{
+            background-color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <table class="table1">
+      <caption>
+        <h2>2024/05/30 牌告匯率</h2>
+      </caption>
+      <thead>
+        <tr>
+          <!-- th{欄位標題$$}*14 -->
+          <th rowspan="2">欄位標題01</th>
+          <th colspan="2">欄位標題02</th>
+          <!-- <th>欄位標題03</th> -->
+          <th colspan="2">欄位標題04</th>
+          <!-- <th>欄位標題05</th> -->
+          <th rowspan="2">欄位標題06</th>
+          <th rowspan="2">欄位標題07</th>
+        </tr>
+        <tr>
+          <!-- <th>欄位標題08</th> -->
+          <th>欄位標題09</th>
+          <th>欄位標題10</th>
+          <th>欄位標題11</th>
+          <th>欄位標題12</th>
+          <!-- <th>欄位標題13</th> -->
+          <!-- <th>欄位標題14</th> -->
+        </tr>
+      </thead>
+      <tbody id="body">
+        <tr>
+          <td>一般儲存格01</td>
+          <td>一般儲存格02</td>
+          <td>一般儲存格03</td>
+          <td>一般儲存格04</td>
+          <td colspan="2" rowspan="2">一般儲存格05</td>
+          <!-- <td>一般儲存格06</td> -->
+          <td>一般儲存格07</td>
+        </tr>
+        <tr>
+          <td>一般儲存格08</td>
+          <td>一般儲存格09</td>
+          <td>一般儲存格10</td>
+          <td>一般儲存格11</td>
+          <!-- <td>一般儲存格12</td> -->
+          <!-- <td>一般儲存格13</td> -->
+          <td>一般儲存格14</td>
+        </tr>
+        <tr>
+          <td>一般儲存格15</td>
+          <td>一般儲存格16</td>
+          <td>一般儲存格17</td>
+          <td>一般儲存格18</td>
+          <td>一般儲存格19</td>
+          <td>一般儲存格20</td>
+          <td>一般儲存格21</td>
+        </tr>
+        <tr>
+          <td>一般儲存格22</td>
+          <td>一般儲存格23</td>
+          <td>一般儲存格24</td>
+          <td>一般儲存格25</td>
+          <td>一般儲存格26</td>
+          <td>一般儲存格27</td>
+          <td>一般儲存格28</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot>
+        <tr>
+            <td></td>*7
+        </tr>
+      </tfoot> -->
+
+      <script>
+      // 抓到資料
+      const data = [
+        {
+          currency: "美金 (USD)",
+          cashBuyingRate: "31.81",
+          cashSellingRate: "32.48",
+          buyingSpotRate: "32.16",
+          sellingSpotRate: "32.26",
+        },
+        {
+          currency: "港幣 (HKD)",
+          cashBuyingRate: "3.972	",
+          cashSellingRate: "4.176",
+          buyingSpotRate: "4.098",
+          sellingSpotRate: "4.158",
+        },
+      ];
+
+      const body = document.querySelector('#body')
+      // 處理資料
+      let res = '' 
+      for(let i=0; i<data.length;i++){
+        res += `<tr>
+          <td>${data[i].currency}</td>
+          <td>${data[i].cashBuyingRate}</td>
+          <td>${data[i].cashSellingRate}</td>
+          <td>${data[i].buyingSpotRate}</td>
+          <td>${data[i].sellingSpotRate}</td>
+          <td>查詢</td>
+          <td>查詢</td>
+        </tr>`
+      }
+
+      // 將資料塞進html畫面中
+      body.innerHTML = res
+    </script>
+    </table>
+  </body>
+</html>

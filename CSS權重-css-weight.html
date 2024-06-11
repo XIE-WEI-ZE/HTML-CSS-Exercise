@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS權重 css weight</title>
+    <style>
+      * {
+        color: yellow;
+      }
+      h1 {
+        color: red;
+      }
+
+      h1.font2{
+        color: purple;
+      }
+
+      h1.font1 {
+        color: blue;
+      }
+      
+      #font2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="font2 font1">CSS權重</h1> <!-- 藍 -->
+    <h1 class="font1" id="font2">CSS權重</h1> <!-- 綠 -->
+    <h1 id="font2" style="color: pink">CSS權重</h1> <!-- 粉 -->
+    <h1>CSS權重</h1> <!-- 紅 -->
+
+    <!-- CSS權重 1.CSS跟元素之間距離 2.根據選擇器使用量&主動被動-->
+  </body>
+</html>

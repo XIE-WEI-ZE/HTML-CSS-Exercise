@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin: 20px;
+    color: #333;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+p, span, h3 {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+}
+hr {
+    font-size: 20px;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+.reporter-info {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+.highlight {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+.more-reports ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+.more-reports li {
+    margin: 10px 0;
+}
+.more-reports a {
+    text-decoration: none;
+    color: inherit;
+}
+.more-reports a:hover {
+    text-decoration: underline;
+}
+.more-reports li:hover {
+    background-color: #f0f0f0;
+}
+ul.nav {
+    background-color: rgb(212, 206, 206);
+    padding: 5px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: flex-start; /* 左對齊 */
+    font-size: 14px;
+    height: 32px; /* 調整高度和文字一樣 */
+}
+ul.nav span {
+    margin-right: 5px;
+}
+ul.nav a {
+    text-decoration: none;
+    color: #333;
+}
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icons a {
+    margin-bottom: 10px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+#backtotop:hover {
+    background-color: #555;
+}
+.back-to-top {
+    color: black; /* 或者使用藍色: color: blue; */
+}
+.back-to-top:visited {
+    color: red;
+}
+.list {
+    list-style-type: none;
+    list-style-image: url(../images/箭頭.png);
+}
+form {
+    float: right;
+    font-size: 30px;
+    list-style-type: none;
+    background-image: url('../images/search.png'); /* 使用你上傳的圖片 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px; /* 根據圖片的寬度調整 */
+    height: 50px; /* 根據圖片的高度調整 */
+    display: flex;
+    align-items: center;
+    border: none; /* 移除邊框 */
+}
+
+form input[type="search"] {
+    /* border: none;
+    outline: none; */
+    font-size: 16px;
+    margin-left: 10px; /* 調整搜索框與圖片之間的距離 */
+    height: 30px; /* 根據需求調整 */
+}
+
+form input[type="submit"] {
+    display: block; /* 顯示提交按鈕 */
+    height: 30px; /* 調整按鈕高度 */
+    width: 50px; /* 調整按鈕寬度 */
+    font-size: 18px; /* 增加字體大小 */
+    background-color: #333; /* 調整背景顏色 */
+    color: white; /* 調整文字顏色 */
+    border: none; /* 移除邊框 */
+    border-radius: 5px; /* 調整圓角 */
+    cursor: pointer; /* 改變鼠標樣式 */
+
+}

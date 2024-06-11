@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-color: antiquewhite; 
+            border-radius: 50%;
+
+            text-align: center;
+            line-height: 50px;
+
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+        section:nth-child(odd){
+            height: 100vh;
+            background-color: pink;
+        }
+        section:nth-child(even){
+            height: 100vh;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body id="body">
+    <a href="#body">
+        <section>區塊01</section>
+        <section>區塊02</section>
+        <section>區塊03</section>
+        <section>區塊04</section>
+    </a>
+    
+</body>
+</html>
